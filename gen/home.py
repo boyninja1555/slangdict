@@ -1,3 +1,3 @@
 import basic
 
-basic.build("home")
+basic.build("home", "Home")

@@ -9,7 +9,7 @@ TEMPLATE_PATH = os.path.join(ROOT_DIR, "templates", "{%}.html")
 
 
 # Output setup
-def build(template_name: str):
+def build(template_name: str, page_title: str = "Unknown") -> None:
     out_path = OUT_PATH.replace("{%}", template_name if template_name != "home" else "index")
     basic_template_path = TEMPLATE_PATH.replace("{%}", "basic")
     template_path = TEMPLATE_PATH.replace("{%}", template_name)
@@ -22,7 +22,7 @@ def build(template_name: str):
 
     # Page creation
     html = basic_template.render(
-        title="Unknown",
+        title=page_title,
         nav=open(NAV_PATH, "r", encoding="utf-8").read(),
         content=template.render(),
     )

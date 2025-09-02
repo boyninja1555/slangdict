@@ -1,3 +1,3 @@
 import basic
 
-basic.build("about")
+basic.build("about", "About")
