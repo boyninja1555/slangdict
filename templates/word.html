@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <!-- Word Page Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Slangdict - {{ word }}</title>
+    <!-- Word Page Resources -->
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/word.css" />
+</head>
+
+<body>
+    {{ nav }}
+
+    <div id="word" class="card">
+        <div id="word-details">
+            <h1>{{ word }}</h1>
+            <p>{{ description }}</p>
+        </div>
+
+        <div id="word-synonyms-antonyms">
+            <span><strong>Synonyms:</strong> {{ synonyms }}</span>
+            <span><strong>Antonyms:</strong> {{ antonyms }}</span>
+        </div>
+    </div>
+
+    <script src="/scripts/globals.js"></script>
+</body>
+
+</html>

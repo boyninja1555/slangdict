@@ -1,0 +1,6 @@
+/* Word page styles */
+#word-synonyms-antonyms {
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}

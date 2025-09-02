@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <!-- Word Page Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Slangdict - Search Results</title>
+    <!-- Word Page Resources -->
+    <link rel="stylesheet" href="/styles/globals.css" />
+</head>
+
+<body>
+    {{ nav }}
+
+    <div id="search-results" class="card">
+        <h1>Searching...</h1>
+    </div>
+
+    <script>window.searchResults = JSON.parse(`{{ results }}`);</script>
+    <script type="module" src="/scripts/search.js"></script>
+    <script src="/scripts/globals.js"></script>
+</body>
+
+</html>

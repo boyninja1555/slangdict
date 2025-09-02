@@ -1,0 +1,77 @@
+/* Index page styles */
+section {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* Hero section */
+section#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right,
+      #1e1b57 0%,
+      #1e1b57 25%,
+      #1d4079 100%);
+}
+
+section#hero h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+section#hero h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--muted-foreground);
+}
+
+/* Contributing section */
+section#contributing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+section#contributing h2 {
+  text-align: center;
+}
+
+section#contributing p {
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 800px;
+  color: var(--muted-foreground);
+}
+
+section#contributing #contributions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+}
+
+section#contributing #contributions .contribution {
+  padding: 1em;
+  background-color: var(--popover);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  width: 100%;
+  max-width: 300px;
+}
+
+section#contributing #contributions .contribution h3 {
+  font-size: 1.5em;
+}
+
+section#contributing #contributions .contribution p {
+  text-align: left;
+}
